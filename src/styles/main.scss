@@ -1,5 +1,8 @@
-@import './about/about.scss';
+@import "grid.scss";
 
-body {
-        background-color: magenta;
-}
+@import "globals.scss";
+
+@import "pages/peats.scss";
+@import "pages/thrive.scss";
+@import "pages/fosterfor.scss";
+@import "pages/test.scss";

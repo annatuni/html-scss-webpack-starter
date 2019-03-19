@@ -1,12 +1,33 @@
-import _ from "lodash";
+import './resources.js'
 
-function component() {
-    let element = document.createElement("div");
 
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(["... Hello", "Worlds"], " ");
+var modalBtns = [...document.querySelectorAll(".button")];
+modalBtns.forEach(function(btn) {
+  btn.onclick = function() {
+    var modal = btn.getAttribute('data-modal');
+    document.getElementById(modal).style.display = "block";
+  }
+});
 
-    return element;
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn) {
+  btn.onclick = function() {
+    var modal = btn.closest('.modal');
+    modal.style.display = "none";
+  }
+});
+
+window.onclick = function(event) {
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
+  }
 }
 
-document.body.appendChild(component());
+
+window.setInterval(function() {
+  randomColor();
+}, 4000);
+
+function randomColor() {
+  document.body.style.background = '#' + Math.floor(Math.random() * 16777215).toString(16);
+}

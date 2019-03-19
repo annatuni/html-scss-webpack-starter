@@ -1,12 +1,443 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    </head>
-    <body>
-        <h1> home </h1>
-        <h1> home </h1>
-        </body>
-        </html>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+
+  <div class="menu-mobile">
+    <div class="page-links-left">
+      <a href="#">anna tunikova</a>
+    </div>
+  </div>
+
+
+  <div class="menu">
+
+    <div class="page-links-left">
+      <a href="/index.html"> anna tunikova</a>
+    </div>
+
+    <div class="page-links-right">
+      <a href="#">
+      <button>soon</button>
+      <a href="#">
+        <button>soon</button>
+      </a>
+    </div>
+
+    <div class="button-right">
+      <a href="mailto:anna.tunikova@hotmail.de">
+      <button>  send anna an email
+      </button></a>
+
+    </div>
+  </div>
+
+
+  <div class="menu-icons">
+
+    <div class="instagram">
+      <a href="https://www.instagram.com/tunsen/">
+      <img src="/images/instagram.png" alt="">
+      </a>
+    </div>
+
+    <div class="facebook">
+      <a href="https://www.facebook.com/anna.tuni.9">
+      <img src="/images/facebook.png" alt="">
+    </a>
+    </div>
+  </div>
+
+
+
+  <p>
+    <button class="button" data-modal="modalOne">
+      Contact Us
+    </button>
+  </p>
+  <p>
+    <button class="button" data-modal="modalTwo">
+      Send Us Hate Mail
+    </button>
+  </p>
+
+  <div id="modalOne" class="modal">
+    <div class="modal-content">
+      <div class="contact-form">
+        <a class="close">&times;</a>
+        <h2>Ask A Question</h2><br>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalTwo" class="modal">
+    <div class="modal-content">
+      <div class="contact-form">
+        <span class="close">&times;</span>
+        <h2>Haters Gonna Hate
+        The standard Lorem Ipsum passage, used since the 1500s
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, agni dolores eos qui ratione voluptatem sequi nesciunt. Neque </h2><br>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="works col-12">
+    <ul>
+
+      <div class="work-item">
+        <div class="first">
+          <li class="popup1_open">peats</li>
+        </div>
+        <div class="second">
+          <p>
+            here you will soon see some nice discriptions
+          </p>
+        </div>
+      </div>
+
+
+      <div class="work-item">
+        <div class="first">
+          <li class="popup2_open">Foster for</li>
+        </div>
+        <div class="second">
+          <p>
+            here you will soon see some nice </br> discriptions
+          </p>
+        </div>
+      </div>
+
+
+      <div class="work-item">
+        <div class="first">
+          <li class="popup3_open">thrive</li>
+        </div>
+        <div class="second">
+          <p>
+            here you will soon see </br> some nice discriptions
+          </p>
+        </div>
+      </div>
+
+
+      <div class="work-item">
+        <div class="first">
+          <li class="popup4_open">random</li>
+        </div>
+        <div class="second">
+          <p>
+            here you will soon see some nice discriptions
+          </p>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="first">
+          <li class="popup4_open">sexy times</li>
+        </div>
+        <div class="second">
+          <p>
+            here you will soon see some nice discriptions
+          </p>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <div class="first">
+          <li class="popup4_open">typo</li>
+        </div>
+        <div class="second">
+          <p>
+            here you will soon see some nice discriptions
+          </p>
+        </div>
+      </div>
+    </ul>
+  </div>
+
+  <div class="spacer">
+  </div>
+
+
+  <section id="popup1">
+    <h2>Peats</h2>
+    <p>more coming soon</p>
+      <img src="/images/peats_logo.png" alt="">
+    <img src="/images/peats_mobile.png" alt="">
+    <img src="/images/peats_cards.png" alt="">
+    <img src="/images/peats_casefinder.gif" alt="">
+    <img src="/images/peats_web.png" alt="">
+
+
+
+
+  </section>
+
+  <section id="popup2">
+    <h2>Foster For</h2>
+    <p>more coming soon</p>
+      <img src="/images/red_1.png" alt="">
+    <img src="/images/foster_bag.png" alt="">
+    <img src="/images/foster_card.png" alt="">
+    <img src="/images/foster_invite_1.png" alt="">
+
+
+
+  </section>
+
+
+  <section id="popup3">
+    <h2>thrive</h2>
+    <p>more coming soon</p>
+    <img src="/images/thrive_logos.png" alt="">
+    <img src="/images/thrive_font.png" alt="">
+
+    <img src="/images/thrive_room.png" alt="">
+    <img src="/images/thrive_whole.png" alt="">
+    <img src="/images/thrive_3.png" alt="">
+    <img src="/images/thrive_whole_.png" alt="">
+    <img src="/images/thrive_render.png" alt="">
+
+
+
+
+  </section>
+
+  <section id="popup4">
+    <h2>coming soon</h2>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script> -->
+
+
+
+  <!-- <script>
+    $('#popup1').popup();
+
+
+    $('#popup2').popup({
+      pagecontainer: '#works',
+      escape: false
+    });
+
+    $('#popup3').popup({
+      pagecontainer: '#works',
+      escape: false
+    })
+
+    $('#popup4').popup({
+      pagecontainer: '#works',
+      escape: false
+    })
+  </script> -->
+
+
+
+
+
+
+  <!-- <div class="spacer">
+  </div> -->
+
+  <!-- <div class="works col-12">
+    <div class="work-links">
+      <div class="work-item">
+        <a href="#">Foster For</a>
+        <div class="description">
+          <p>
+            Hr tools project, lorem ipsum. dolor sit amet.
+          </p>
+        </div>
+      </div>
+
+      <div class="work-item">
+        <a href="#">thrive</a>
+        <div class="description">
+          <p>
+            Hr tools project, lorem ipsum. dolor sit amet.
+          </p>
+        </div>
+        <img src="/images/thrive_whole.png" alt="">
+      </div>
+
+      <div class="work-item">
+        <a href="#">random stuff</a>
+        <div class="description">
+          <p>
+            Hr tools project, lorem ipsum. dolor sit amet.
+          </p>
+        </div>
+        <img src="/images/thrive_whole.png" alt="">
+      </div>
+
+      <div class="work-item">
+        <a href="#">render</a>
+        <div class="description">
+          <p>
+            Hr tools project, lorem ipsum. dolor sit amet.
+          </p>
+        </div>
+        <img src="/images/thrive_whole.png" alt="">
+      </div>
+      <div class="spacer-small">
+      </div>
+
+      <div class="work-item">
+        <a href="kamasutra.html">Sexy time</a>
+        <div class="description">
+          <p>
+            Hr tools project, lorem ipsum. dolor sit amet.
+          </p>
+        </div>
+        <img src="/images/foster_bag.png" alt="">
+
+      </div>
+      <div class="work-item">
+        <a href="favorsky.html">Russian style</a>
+        <div class="description">
+          <p>
+            Hr tools project, lorem ipsum. dolor sit amet.
+          </p>
+        </div>
+        <img src="/images/peats_mobile.png" alt="">
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <!-- logo -->
+  <!-- <div class="contact-info">
+
+    <div class="info">
+      <h3>
+  Anna Tunikova, Berlin, Sankt Petersburg
+  </h3>
+      <span> / </span>
+
+      <a href="mailto:anna.tunikova@hotmail.de">
+          anna.tunikova@hotmail.de
+      </a>
+
+      <span> / </span>
+
+      <a href="https://www.instagram.com/tunsen/">
+        instagram
+    </a>
+      <span> / </span>
+
+      <link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/0pZCV6m"><span style="margin-left:2px">Buy me a coffee</span></a>
+
+    </div>
+
+  </div> -->
+
+
+
+
+
+  <script>
+  </script>
+
+
+
+  <!-- <script>
+    var workItems = Array.prototype.slice.call(
+      document.getElementsByClassName("work-item")
+    );
+
+    workItems.forEach(function(item) {
+      var imageElement = item.children[1];
+      var imageX = imageElement.x;
+      var imageY = imageElement.y;
+      item.addEventListener("mouseover", function(event) {
+        var oldX = event.x;
+        var oldY = event.y;
+        event.target.addEventListener("mousemove", function(event) {
+          var newX = event.x - oldX;
+          var newY = event.y - oldY;
+          imageElement.style.transform =
+            "translateX(" + newX + "px) translateY(" + newY + "px)";
+        });
+      });
+
+    });
+  </script> -->
+
+
+</body>
+
 </html>
+
+
+
+
+
+
+<!-- <div class="me-info row">
+  <div class="">
+
+  <div class="name">
+      <div class="left">
+            <h3>tunikova <br />
+              anna
+            </h3>
+      </div>
+  </div>
+
+  <div class="adress">
+        <div class="right">
+              <h3>Berlin, Sankt-Petersburg <br />
+                  anna.tunikova@hotmail.de
+              </h3>
+        </div>
+  </div>
+
+</div>
+</div> -->
+
+
+
+
+<!-- color  background end -->
+
+
+
+<!-- <div class="explanation col-2">
+
+  <div class="text">
+
+      <h2>
+        I am a designer currently living between berlin & sankt-petersburg.
+        co-founder of a digital agency foster for and master of lots of different things.
+      </h2>
+    </div>
+
+  </div> -->
+
+
+
+
+
+<!-- image hover -->
+
+<!-- <div class="adress">
+          <div class="bottom-right">
+                <h3>Berlin, Sankt-Petersburg <br />
+
+                  <a href="mailto:anna.tunikova@hotmail.de">
+                    anna.tunikova@hotmail.de</a>
+
+                </h3>
+          </div>
+    </div> -->

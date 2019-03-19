@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body class="main">
+
+  <div class="menu">
+
+    <div class="page-links">
+      <!-- <button></button> -->
+      <a href="about.html">about</a>
+      <a href="about.html">contact</a>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="spacer">
+
+  </div>
+
+  <!-- works list -->
+  <div class="works">
+    <div class="work-links">
+
+      <div class="work-item">
+        <a href="#">fosterfor</a>
+        <img src="/images/foster_bag.png" alt="">
+      </div>
+      <div class="work-item">
+        <a href="#">peats</a>
+        <img src="/images/peats_mobile.png" alt="">
+      </div>
+      <div class="work-item">
+        <a href="#">thrive</a>
+        <img src="/images/thrive_whole.png" alt="">
+      </div>
+
+      <div class="work-item">
+        <a href="kamasutra.html">Sexy time</a>
+        <img src="#" alt="">
+      </div>
+      <div class="work-item">
+        <a href="favorsky.html">Russian style</a>
+        <div class="big">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- logo -->
+  <div class="contact-info">
+
+    <div class="info">
+      <h3>
+  Anna Tunikova, Berlin, Sankt Petersburg
+  </h3>
+      <span> / </span>
+
+      <a href="mailto:anna.tunikova@hotmail.de">
+          anna.tunikova@hotmail.de
+      </a>
+
+      <span> / </span>
+
+      <a href="https://www.instagram.com/tunsen/">
+        instagram
+    </a>
+      <span> / </span>
+      <a href="https://www.instagram.com/tunsen/">
+      or donate
+    </a>
+    </div>
+
+  </div>
+
+  <!-- logo over -->
+
+
+
+
+  <script>
+    var workItems = Array.prototype.slice.call(
+      document.getElementsByClassName("work-item")
+    );
+
+    workItems.forEach(function(item) {
+      var imageElement = item.children[1];
+      var imageX = imageElement.x;
+      var imageY = imageElement.y;
+      item.addEventListener("mouseover", function(event) {
+        var oldX = event.x;
+        var oldY = event.y;
+        event.target.addEventListener("mousemove", function(event) {
+          var newX = event.x - oldX;
+          var newY = event.y - oldY;
+          imageElement.style.transform =
+            "translateX(" + newX + "px) translateY(" + newY + "px)";
+        });
+      });
+
+    });
+  </script>
+
+
+  <script>
+    window.setInterval(function() {
+      randomColor();
+    }, 4000);
+
+    function randomColor() {
+      document.body.style.background = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <div class="me-info row">
+  <div class="">
+
+  <div class="name">
+      <div class="left">
+            <h3>tunikova <br />
+              anna
+            </h3>
+      </div>
+  </div>
+
+  <div class="adress">
+        <div class="right">
+              <h3>Berlin, Sankt-Petersburg <br />
+                  anna.tunikova@hotmail.de
+              </h3>
+        </div>
+  </div>
+
+</div>
+</div> -->
+
+
+
+
+<!-- color  background end -->
+
+
+
+<!-- <div class="explanation col-2">
+
+  <div class="text">
+
+      <h2>
+        I am a designer currently living between berlin & sankt-petersburg.
+        co-founder of a digital agency foster for and master of lots of different things.
+      </h2>
+    </div>
+
+  </div> -->
+
+
+
+
+
+<!-- image hover -->
+
+
+
+
+<!-- <div class="adress">
+          <div class="bottom-right">
+                <h3>Berlin, Sankt-Petersburg <br />
+
+                  <a href="mailto:anna.tunikova@hotmail.de">
+                    anna.tunikova@hotmail.de</a>
+
+                </h3>
+          </div>
+    </div> -->

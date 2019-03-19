@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+
+  <div class="menu-mobile">
+    <div class="page-links-left">
+      <a href="#">anna tunikova</a>
+    </div>
+  </div>
+
+
+  <div class="menu">
+
+    <div class="page-links-left">
+      <a href="/index.html"> anna tunikova</a>
+    </div>
+
+    <div class="page-links-right">
+    <a href="about.html"> <button>about</button>
+
+      <a href="contact.html"> <button> contact</button>
+      </a>
+    </div>
+
+    <div class="button-right">
+      <a href="mailto:anna.tunikova@hotmail.de">
+      <button>  send anna an email
+      </button></a>
+
+    </div>
+  </div>
+
+
+  <div class="menu-icons">
+
+    <div class="instagram">
+      <a href="https://www.instagram.com/tunsen/">
+      <img src="/images/instagram.png" alt="">
+      </a>
+    </div>
+
+    <div class="facebook">
+      <a href="https://www.facebook.com/anna.tuni.9">
+      <img src="/images/facebook.png" alt="">
+    </a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="works col-12">
+    <ul>
+      <div class="work-item">
+        <div class="first">
+          <li class="popup1_open">anna</li>
+        </div>
+        <div class="second">
+          <p>
+i will soon greet you with discription about myself.
+and for now, i am a    </p>
+
+<li class="popup1_open">designer</li>
+
+        </div>
+      </div>
+    </ul>
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+
+
+
+
+
+
+  <script>
+    window.setInterval(function() {
+      randomColor();
+    }, 4000);
+
+    function randomColor() {
+      document.body.style.background = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+  </script>
+
+
+
+</body>
+
+</html>

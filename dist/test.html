@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title> test </title>
+<link href="style.css" rel="stylesheet"></head>
+
+
+
+
+<!-- <body class="test">
+  <div id="screen"></div>
+  <div id="images">
+    <img src="/images/img_1.png">
+    <img src="/images/img_2.png">
+    <img src="/images/img_3.png">
+    <img src="/images/img_4.png">
+
+  </div>
+
+  <script>
+    window.addEventListener('load', function() {
+      var src = document.getElementById("images").getElementsByTagName("img")
+      var img = function img(el, x, y) {
+          var d = document.createElement("div");
+          d.className = "frame";
+          d.style.left = 50 * x + "%";
+          d.style.top = 50 * y + "%";
+          var img = document.createElement("img");
+          img.className = "img";
+          img.src = src[Math.floor(Math.random() * src.length)].src;
+          img.onmousedown = function() {
+            div(this.parentNode);
+            this.parentNode.removeChild(this);
+          }
+          d.appendChild(img);
+          el.appendChild(d);
+        },
+        div = function div(el) {
+          img(el, 0, 0);
+          img(el, 1, 0);
+          img(el, 0, 1);
+          img(el, 1, 1);
+
+        };
+      div(document.getElementById("screen"));
+      window.ondragstart = function() {
+        return false;
+      }
+    }, false);
+  </script>
+
+<script type="text/javascript" src="index.js"></script></body> -->
+
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>
+    test
+  </title>
+</head>
+
+<body>
+
+
+  <!-- color background -->
+
+  <!-- <div id="full"></div>
+  <script>
+    var div = document.getElementById("full");
+
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function changeColor() {
+      div.style.backgroundColor = getRandomColor();
+    }
+
+    setInterval(changeColor, 3000);
+  </script> -->
+
+  <!-- color  background end -->
+
+
+  <!-- navigation -->
+  <div class="container navigation">
+    <div class="row">
+
+      <div class="col-4">
+        <div class="logo">
+            <img src="/images/anna.png" alt="">
+          <!-- <h1>
+            Anna <br> Tunikova
+            <br>
+            Design and Art Directions
+          </h1> -->
+        </div>
+      </div>
+
+      <div class="col-4">
+        <h3>Berlin, Sankt-Petersburg
+          <br>
+            <a href="mailto:anna.tunikova@hotmail.de" target="_top">anna.tunikova@hotmail.de</a>
+            <br>
+            <a href="tel:+491757377795">+49 (0) 1757377795</a>
+            <h3>
+          </div>
+
+    </div>
+  </div>
+  <!-- navigation end -->
+
+
+
+  <!-- text-->
+  <div class="container about-text">
+    <div class="row">
+      <div class="col-8">
+        <div class="into-text">
+          <p>
+            Currently living between berlin & sankt-petersburg. co-founder of a digital agency foster for. lead designer of one major project and various smaller things. get in touch.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- text end -->
+
+
+
+
+  <!-- works list -->
+<div class="container works row">
+<div class="col-5">
+  <div class="work-item">
+    <a href="#">fosterfor</a>
+    <img src="/images/foster_bag.png" alt="">
+  </div>
+  <div class="work-item">
+    <a href="#">peats</a>
+    <img src="/images/peats_mobile.png" alt="">
+  </div>
+  <div class="work-item">
+    <a href="#">thrive</a>
+    <img src="/images/thrive_whole.png" alt="">
+  </div>
+  <div class="work-item">
+    <a href="#">random</a>
+    <img src="/images/random.png" alt="">
+  </div>
+</div>
+</div>
+
+
+<!-- image hover -->
+
+<!--<script>
+var workItems = Array.prototype.slice.call(
+  document.getElementsByClassName("work-item")
+);
+
+workItems.forEach(function(item) {
+  var imageElement = item.children[1];
+  var imageX = imageElement.x;
+  var imageY = imageElement.y;
+  item.addEventListener("mouseover", function(event) {
+    var oldX = event.x;
+    var oldY = event.y;
+    event.target.addEventListener("mousemove", function(event) {
+      var newX =  event.x-oldX ;
+      var newY =  event.y-oldY ;
+      imageElement.style.transform =
+        "translateX(" + newX + "px) translateY(" + newY + "px)";
+    });
+  });
+
+});
+</script>
+-->
+
+<!-- image hover over -->
+
+
+
+
+
+
+
+  <!-- footer -->
+  <div class="container row">
+
+  <div class="footer">
+
+      <div class="col-3">
+        <a href="https://www.instagram.com/tunsen/">→ instagram</a>
+        <br />
+        <a href="https://www.facebook.com/anna.tuni.9">→ facebook</a>
+      </div>
+
+  </div>
+</div>
+
+
+
+  <!-- footer end -->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Axis';
+  src: './font/Axis Extrabold.otf';
+}
+@font-face {
+  font-family: 'AsimovXWidOu';
+  src: './font/AsimovXWidOu.otf';
+}
+@font-face {
+  font-family: 'Asimov';
+  src: './font/Asimov.otf';
+}
+@font-face {
+  font-family: 'Aileron';
+  src: './font/Aileron-Black.otf';
+}
+// $basic-font: AsimovXWidOu;
+// FONTS
+
+* {border:1px solid red
+}
+
+.container {
+  width: 96%;
+}
+
+body {
+  // background-color: white;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#full {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+h1 {
+  font-family: Aileron;
+  font-size: 20px;
+  margin: 0;
+}
+// h2 {
+//   font-family: Aileron;
+//   font-size: 80px;
+//   line-height: 80px;
+//   margin: 0;
+// }
+
+h3 {
+  font-family: Aileron;
+  font-size: 20px;
+  margin: 0;
+}
+// links
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  font-family: Aileron;
+  font-size: 20px;
+  // margin: 0;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: line-through;
+  }
+}
+// NAVIGATION
+
+
+  .logo-wrapper {
+
+  width: 100px;
+  height: 100px;
+
+    img{
+      height: 100%;
+    }
+  }
+
+
+
+// description text
+
+.about-text {
+  .into-text p {
+    font-size: 20px;
+    font-family: Aileron;
+    margin-top: 10vh;
+    font-weight: 700;
+  }
+}
+
+.works {
+  margin-top: 0;
+
+  .work-item {
+    // float: right;
+    margin: 0;
+    width: 150px;
+    display: block;
+
+    a {
+      font-weight: 700;
+      font-size: 20px;
+      width: 150px;
+      display: block;
+      padding: 0.1em 2%;
+      color: black;
+      cursor: pointer;
+      // text-decoration: underline;
+
+      &:hover {
+        text-decoration: line-through;
+      }
+    }
+
+    img {
+      height: 300px;
+      position: fixed;
+      bottom: 5vh;
+      right: 10vh;
+      opacity: 0;
+      transition: opacity 300ms;
+
+      &:hover {
+        opacity: 0!important;
+      }
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+// footer
+
+.footer {
+  position: fixed;
+  bottom: 30px;
+  // left: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  font-family: Aileron;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
